@@ -557,4 +557,6 @@ const server = http.createServer(async (req, res) => {
   sendJson(res, 405, { error: 'Method not allowed' });
 });
 
-server.listen(PORT, '0.0.0.0', () => console.log(`Smart Inventory running at http://0.0.0.0:${PORT}`));
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Smart Inventory running at http://0.0.0.0:${PORT}`);
+});
